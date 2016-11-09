@@ -1,0 +1,19 @@
+{
+  "name": "family",
+  "version": "1.0.0",
+  "description": "PHP and PostCSS Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eddie Solar",
+  "license": "ISC",
+  "devDependencies": {
+    "csswring": "^5.1.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-watch": "^4.3.10",
+    "precss": "^1.4.0"
+  }
+}
