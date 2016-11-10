@@ -1,23 +1,9 @@
 
 
-@import "press/config";
 
+@import "precss/config";
 
-html, body{
-  width:100%;
-  box-sizing:border-box;
-  color: white;
-}
+@import "precss/base";
 
-*, *:before, *:after{
-  box-sizing:border-box;
-}
-
-div{
-	background:black;
-	h1{
-		color:white;
-	}
-}
 
 
