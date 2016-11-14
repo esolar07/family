@@ -3,12 +3,14 @@ var gulp = require('gulp'),
 	csswring = require('csswring'),
     precss = require("precss"),
 	watch = require('gulp-watch'),
+	cssnext = require('postcss-cssnext'),
 	autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('css', function () {
   var processors = [
 	csswring,
-	precss({})
+	precss({}),
+	cssnext({browsers: ['last 1 version']})
   ];
   return gulp.src('./*.css')
     .pipe(postcss(processors))

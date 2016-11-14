@@ -1,10 +1,8 @@
 
 <?php 
-
 	$pgTitle = "Home";
 	
 	include ("inc/header.php");
-	
 ?>
 
 

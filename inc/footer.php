@@ -1,6 +1,6 @@
 		</main>
-		
-		<footer>
+		<!-- end of main content -->
+		<footer class='l-footer'>
 		
 		<p><?php echo date('Y').":".$siteTitle; ?></p>
 		</footer>

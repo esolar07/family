@@ -14,8 +14,8 @@ $siteTitle = "The Solars";
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="stylesheet/normalize.css">
-        <link rel="stylesheet" href="stylesheet/style.css">
+        <!-- <link rel="stylesheet" href="stylesheet/normalize.css"> -->
+        <link rel="stylesheet" href="dest/styles.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
