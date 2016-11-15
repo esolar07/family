@@ -22,3 +22,49 @@
 		margin-left: 10px;
 	}
 }
+
+
+.jumbotron{
+	width: 100%;
+}
+
+.familyPic{
+	display:flex;
+	flex-direction: row;
+	width:100%;
+	&__lrgImg{
+		object-fit: fill;
+	}
+}
+
+.familyMembers{
+	&__row{
+		display:flex;
+		width:100%;
+	}
+	&--1{
+		flex-direction:column;
+		@media (--desktop-viewport) {
+			flex-direction:row;
+		}
+	}
+	&--2{
+		flex-wrap: wrap;
+	}
+	&__parent{
+		width:100%;
+		border: 2px solid red;
+		height:350px;
+		@media (--desktop-viewport) {
+			width:calc(100% / 2);
+		}
+	}
+	&__kid{
+		width:calc(100% / 2); 
+		border: 2px solid red;
+		height:200px;
+		@media (--desktop-viewport) {
+			width:calc(100% / 4);
+		}
+	}
+}
