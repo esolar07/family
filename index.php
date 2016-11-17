@@ -2,6 +2,21 @@
 <?php 
 	$pgTitle = "Home";	
 	include ("inc/header.php");
+	
+	try{
+		$results = $db->query('SELECT * FROM familyMembers WHERE adult = 1');	
+		$results2 = $db->query('SELECT * FROM familyMembers WHERE adult = 2');
+	} catch(Exception $e){
+		echo $e->getMessage();
+		die();
+	}
+	
+	$parents = $results->fetchAll(PDO::FETCH_ASSOC);
+	$kids = $results2->fetchAll(PDO::FETCH_ASSOC);
+	
+	// echo '<pre>';
+	// var_dump($family);
+	// echo '</pre>';
 ?>
 
 	<section class="jumbotron">
@@ -11,12 +26,20 @@
 	</section>
 	<section class="familyMembers">
 		<div class="familyMembers__row familyMembers--1">
-			<div class="familyMembers__parent">
+		
+			<?php
+				foreach($family as $parent){
+					echo '<div class="familyMembers__parent">';
+						echo '<a href=""><img src="">';
+							echo "<p>". $parent["name"] . "</p>";
+						echo '</a>';
+					echo '</div>';
+				}
+			?>
+			
+			<!-- <div class="familyMembers__parent">
 				<img src="">
-			</div>
-			<div class="familyMembers__parent">
-				<img src="">
-			</div>
+			</div> -->
 		</div>
 		<div class="familyMembers__row familyMembers--2">
 			<div class="familyMembers__kid">

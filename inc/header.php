@@ -1,8 +1,10 @@
 <?php
 
 $siteTitle = "The Solars";
+require_once('database.php');
 
 ?>
+
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
@@ -31,10 +33,10 @@ $siteTitle = "The Solars";
 
 			  <ul class="menu">
 				<li class="menu__item <?php if ($pgTitle == "Home"){ echo 'menu__item--hovered';} ?>">
-					<a> Home </a>
+					<a href="/family"> Home </a>
 				</li>
 				<li class="menu__item <?php if ($pgTitle == "About"){ echo 'menu__item--hovered';} ?>">
-					<a> About </a>
+					<a href="/family/about.php"> About </a>
 				</li>
 				<li class="menu__item <?php if ($pgTitle == "Sample"){ echo 'menu__item--hovered';} ?>">
 					<a> Sample </a>
