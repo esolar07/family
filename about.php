@@ -13,12 +13,13 @@
 ?>
 	
 	<section class="jumbotron">
-		<?php
-			foreach($family as $person){
-				echo "<div>".$person["name"]."</div>";
-			}
-		?>
+		<h1>Meet <?php echo ucwords($siteTitle); ?> </h1>
 		
+		<div class="family-list">
+			<?php foreach($family as $person){ ?>
+				<div class="family-list__person"> <?php echo ucwords($person["name"]); ?> </div>
+			<?php } ?>
+		</div>
 	</section>
 	
 <?php include ("inc/footer.php");?>

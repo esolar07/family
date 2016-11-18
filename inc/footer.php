@@ -2,7 +2,7 @@
 		<!-- end of main content -->
 		<footer class='l-footer'>
 		
-		<p><?php echo date('Y').":".$siteTitle; ?></p>
+		<p><?php echo date('Y')." - ".ucwords($siteTitle); ?></p>
 		</footer>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
