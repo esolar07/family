@@ -1,4 +1,5 @@
 
-.menu__item--hovered{
-	
+.menu__item--selected{
+	color:white;
+	background: var(--menu-item-hoverd-color);
 }

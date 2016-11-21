@@ -27,18 +27,20 @@ require_once('database.php');
 
 		<header class="l-header">
 			<nav class="navi">
-				<a>
-				  <h1><?php echo ucwords($siteTitle); ?></h1>
-				</a>
+				<div class="navi__header">
+					<a>
+					  <h1><?php echo ucwords($siteTitle); ?></h1>
+					</a>
+				</div>
 
 			  <ul class="menu">
-				<li class="menu__item <?php if ($pgTitle == "Home"){ echo 'menu__item--hovered';} ?>">
+				<li class="menu__item <?php if ($pgTitle == "Home"){ echo 'menu__item--selected';} ?>">
 					<a href="/family"> Home </a>
 				</li>
-				<li class="menu__item <?php if ($pgTitle == "About"){ echo 'menu__item--hovered';} ?>">
+				<li class="menu__item <?php if ($pgTitle == "About"){ echo 'menu__item--selected';} ?>">
 					<a href="/family/about.php"> About </a>
 				</li>
-				<li class="menu__item <?php if ($pgTitle == "Sample"){ echo 'menu__item--hovered';} ?>">
+				<li class="menu__item <?php if ($pgTitle == "Sample"){ echo 'menu__item--selected';} ?>">
 					<a> Sample </a>
 				</li>
 			  </ul>

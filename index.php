@@ -19,7 +19,7 @@
 	<section class="jumbotron">
 	
 		<div class="familyPic">
-			<img class="familyPic__lrgImg" alt="Solar Family Image" src="http://i.huffpost.com/gen/3115980/images/o-POP-CULTURE-PAINTING-SUPERHEROES-FLEMISH-OLD-facebook.jpg">
+			<img class="familyPic__lrgImg" alt="Solar Family Image" src="/family/images/family.jpg">
 			<h1 class="familyPic__title"> <?php echo ucwords($siteTitle); ?> </h1>
 		</div>
 		
@@ -31,9 +31,9 @@
 		
 			<?php foreach($parents as $parent){ ?>
 					<div class="familyMembers__parent">
-						<?php echo "<a href='/family/profile.php?id=" . $parent["id"] ."'>" ?>
-							<img src="">
-							<p> <?php echo ucwords($parent["name"]); ?></p>
+						<?php echo "<a href='/family/profile.php?id=" . $parent["id"] . "'>" ?>
+							<?php echo "<img class='familyMembers__parent-image' src='/family/images/" . $parent["name"] . ".jpg'>"; ?>
+							<div class='familyMembers__parent-name'> <?php echo ucwords($parent["name"]); ?></div>
 						</a>
 					</div>
 			<?php } ?>
@@ -42,9 +42,9 @@
 		<div class="familyMembers__row familyMembers--2">
 			<?php foreach($kids as $kid) { ?>
 				<div class="familyMembers__kid">
-					<a href="/family/profile.php?id="<?php echo $kid["id"] ?>>
-						<img src="">
-						<p> <?php echo ucwords($kid["name"]); ?> </p>
+					<?php echo "<a href='/family/profile.php?id=" . $kid["id"] . "'>" ?>
+						<?php echo "<img class='familyMembers__kid-image' src='/family/images/" . $kid["name"] . ".jpg'>"; ?>
+						<div class='familyMembers__kid-name'> <?php echo ucwords($kid["name"]); ?> </div>
 					</a>
 				</div>
 			<?php } ?>
