@@ -6,6 +6,7 @@
 	try{
 		$results = $db->query('SELECT * FROM familyMembers WHERE adult = 1');	
 		$results2 = $db->query('SELECT * FROM familyMembers WHERE adult = 0');
+		
 	} catch(Exception $e){
 		echo $e->getMessage();
 		die();
@@ -31,7 +32,7 @@
 		
 			<?php foreach($parents as $parent){ ?>
 					<div class="familyMembers__parent">
-						<?php echo "<a href='/family/profile.php?id=" . $parent["id"] . "'>" ?>
+							<?php echo "<a href='/family/profile.php?id=" . $parent["id"] . "'>" ?>
 							<?php echo "<img class='familyMembers__parent-image' src='/family/images/" . $parent["name"] . ".jpg'>"; ?>
 							<div class='familyMembers__parent-name'> <?php echo ucwords($parent["name"]); ?></div>
 						</a>

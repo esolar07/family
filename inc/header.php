@@ -40,8 +40,8 @@ require_once('database.php');
 				<li class="menu__item <?php if ($pgTitle == "About"){ echo 'menu__item--selected';} ?>">
 					<a href="/family/about.php"> About </a>
 				</li>
-				<li class="menu__item <?php if ($pgTitle == "Sample"){ echo 'menu__item--selected';} ?>">
-					<a> Sample </a>
+				<li class="menu__item <?php if ($pgTitle == "Pictures"){ echo 'menu__item--selected';} ?>">
+					<a href="/family/pictures.php"> Pictures </a>
 				</li>
 			  </ul>
 			</nav>

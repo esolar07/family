@@ -1,10 +1,16 @@
 
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Oswald');
 
 :root {
+--pg-text-font: 'Oswald', sans-serif;
+--pg-header-font: 'Kaushan Script', cursive;
 --pg-bg-color: #C0C0C0;
 --header-color: #F5F5F5;
 --header-border-color: #c5b358;
---menu-item-hoverd-color: #c5b358;
+--header-txt-color: #c5b358;
+--header-txt-color-2: black;
+--menu-item-hovered-color: #c5b358;
+--menu-item-selected-color: #c5b358;
 --footer-color: #c5b358;
 }
 

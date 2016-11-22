@@ -1,5 +1,13 @@
 
+.menu__item:hover{
+	background:var(--menu-item-hovered-color);
+	a{
+		color: white;
+	}
+}
+
 .menu__item--selected{
 	color:white;
-	background: var(--menu-item-hoverd-color);
+	background: var(--menu-item-selected-color);
 }
+

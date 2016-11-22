@@ -12,6 +12,9 @@
 		width: 100%;
 		font-size: 1.5em;
 		text-align: center;
+		background: linear-gradient(var(--header-txt-color-2), var(--header-txt-color));
+		-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 		@media (--desktop-viewport) {
 			margin-top: 20px;
 			width: 50%;
@@ -35,6 +38,10 @@
 		width: calc(100% / 3);
 		border-radius: 2px;
 		text-align: center;
+		transition: .5s all;
+		a{
+			transition: .5s all;
+		}
 	}
 }
 
@@ -43,24 +50,37 @@
 	width: 100%;
 }
 
+.page-header{
+	text-align:center;
+	font-size: 3em;
+	text-shadow: 0 0 13px darkgoldenrod;
+}
+
 .familyPic{
 	display:flex;
 	flex-direction: row;
 	width:100%;
+	background: black;
+	object-fit: cover;
 	&__lrgImg{
-		object-fit: fill;
+		width: 100%;
+		object-fit: cover;
+		opacity: .6;
 	}
 	&__title{
 		position: absolute;
-		top: 30%;
+		top: 360px;
 		right: 0;
 		left: 0;
 		margin-right: auto;
 		margin-left: auto;
 		text-align: center;
-		color: black; 
 		font-size: 5em;
+		background: linear-gradient(var(--header-txt-color), var(--header-txt-color-2));
+		-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 		@media (--desktop-viewport) {
+			top: 220px;
 			font-size: 10em;
 		}
 	}
@@ -82,7 +102,6 @@
 	}
 	&__parent{
 		width:100%;
-		border: 2px solid red;
 		height:370px;
 		@media (--desktop-viewport-2) {
 			width:calc(100% / 2);
@@ -90,7 +109,7 @@
 	}
 	&__parent-name{
 		position: relative;
-		top: 30%;
+		top: -50px;
 		right: 0;
 		left: 0;
 		margin-right: auto;
@@ -103,7 +122,6 @@
 	}
 	&__kid{
 		width:calc(100% / 2); 
-		border: 2px solid red;
 		height:200px;
 		@media (--desktop-viewport-2) {
 			width:calc(100% / 4);
@@ -136,8 +154,12 @@
 		width:55%;
 	}
 	&__person{
-		width: 300px;
-		border: 2px solid red;
+		margin-bottom: 25px;
+		width: 100%;
+	}
+	&__name{
+		font-size:2em;
+		text-align: center;
 	}
 }
 
@@ -149,6 +171,8 @@
 	width:75%;
 	&__intro{
 		text-align:center;
+		font-size: 3em;
+		text-shadow: 0 0 13px darkgoldenrod;
 	}
 	&__img{
 		margin-top:25px;

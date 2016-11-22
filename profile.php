@@ -5,11 +5,13 @@
 	include ("inc/header.php");
 	
 	if (!empty($_GET["id"])){
-		$person_id = $_GET["id"];
+		$person_id = intval($_GET["id"]);
 	}
 	
 	try{
-		$results = $db->query('SELECT * FROM familyMembers WHERE id = '.$person_id);	
+		$results = $db->prepare('SELECT * FROM familyMembers WHERE id = ?');
+		$results->bindParam(1, $person_id);
+		$results->execute();
 	} catch(Exception $e){
 		echo $e->getMessage();
 		die();
