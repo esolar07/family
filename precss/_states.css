@@ -5,9 +5,20 @@
 		color: white;
 	}
 }
+.is-familyMembers__parent-name-hoverd:hover{
+	text-shadow: 0 0 20px gold;
+}
+
+.is-familyMembers__kid-name-hoverd:hover{
+	text-shadow: 0 0 20px gold;
+}
 
 .menu__item--selected{
 	color:white;
 	background: var(--menu-item-selected-color);
 }
 
+.is-footer__source-hovered:hover{
+	color: gold;
+	text-shadow: 0 0 20px black;
+}

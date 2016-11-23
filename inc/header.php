@@ -28,7 +28,7 @@ require_once('database.php');
 		<header class="l-header">
 			<nav class="navi">
 				<div class="navi__header">
-					<a>
+					<a  href="/family">
 					  <h1><?php echo ucwords($siteTitle); ?></h1>
 					</a>
 				</div>

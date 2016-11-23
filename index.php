@@ -34,7 +34,7 @@
 					<div class="familyMembers__parent">
 							<?php echo "<a href='/family/profile.php?id=" . $parent["id"] . "'>" ?>
 							<?php echo "<img class='familyMembers__parent-image' src='/family/images/" . $parent["name"] . ".jpg'>"; ?>
-							<div class='familyMembers__parent-name'> <?php echo ucwords($parent["name"]); ?></div>
+							<div class='familyMembers__parent-name is-familyMembers__parent-name-hoverd'> <?php echo ucwords($parent["name"]); ?></div>
 						</a>
 					</div>
 			<?php } ?>
@@ -45,7 +45,7 @@
 				<div class="familyMembers__kid">
 					<?php echo "<a href='/family/profile.php?id=" . $kid["id"] . "'>" ?>
 						<?php echo "<img class='familyMembers__kid-image' src='/family/images/" . $kid["name"] . ".jpg'>"; ?>
-						<div class='familyMembers__kid-name'> <?php echo ucwords($kid["name"]); ?> </div>
+						<div class='familyMembers__kid-name is-familyMembers__kid-name-hoverd'> <?php echo ucwords($kid["name"]); ?> </div>
 					</a>
 				</div>
 			<?php } ?>

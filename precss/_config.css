@@ -11,6 +11,7 @@
 --header-txt-color-2: black;
 --menu-item-hovered-color: #c5b358;
 --menu-item-selected-color: #c5b358;
+--image-border-color: #c5b358;
 --footer-color: #c5b358;
 }
 
@@ -18,3 +19,5 @@
 @custom-media --desktop-viewport (min-width: 30em);
 
 @custom-media --desktop-viewport-2 (min-width: 43em);
+
+@custom-media --desktop-viewport-3 (min-width: 51em);

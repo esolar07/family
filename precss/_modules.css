@@ -38,6 +38,7 @@
 		width: calc(100% / 3);
 		border-radius: 2px;
 		text-align: center;
+		border: 2px solid #c5b358;
 		transition: .5s all;
 		a{
 			transition: .5s all;
@@ -69,7 +70,7 @@
 	}
 	&__title{
 		position: absolute;
-		top: 360px;
+		top: 150px;
 		right: 0;
 		left: 0;
 		margin-right: auto;
@@ -80,7 +81,7 @@
 		-webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 		@media (--desktop-viewport) {
-			top: 220px;
+			top: 110px;
 			font-size: 10em;
 		}
 	}
@@ -102,40 +103,59 @@
 	}
 	&__parent{
 		width:100%;
-		height:370px;
+		height:400px;
+		border: 1px solid var(--image-border-color);
 		@media (--desktop-viewport-2) {
 			width:calc(100% / 2);
+			top: 130px;
+		}
+		&-image{
+			width: 100%;
+			object-fit: cover;
+			object-position: 50% 15%;
 		}
 	}
 	&__parent-name{
 		position: relative;
-		top: -50px;
+		top: -130px;
 		right: 0;
 		left: 0;
 		margin-right: auto;
 		margin-left: auto;
 		text-align: center;
 		font-size: 2.5em;
+		transition: .3s all;
 		@media (--desktop-viewport) {
 			font-size: 4.0em;
 		}
 	}
 	&__kid{
 		width:calc(100% / 2); 
-		height:200px;
+		height:300px;
+		border: 1px solid var(--image-border-color);
 		@media (--desktop-viewport-2) {
 			width:calc(100% / 4);
+			height:250px;
+		}
+		&-image{
+			width: 100%;
+			object-fit: cover;
+			object-position: 50% 10%;
+		}
+		@media (--desktop-viewport-3) {
+			height: 300px;
 		}
 	}
 	&__kid-name{
 		position: relative;
-		top: -50px;
+		top: -80px;
 		right: 0;
 		left: 0;
 		margin-right: auto;
 		margin-left: auto;
 		text-align: center;
 		font-size: 2em;
+		transition: .3s all;
 		@media (--desktop-viewport) {
 			font-size: 2.5em;
 		}
@@ -149,13 +169,27 @@
 	justify-content: center;
 	margin-right: auto;
 	margin-left: auto;
-	width:75%;
+	width: 100%;
 	@media (--desktop-viewport) {
-		width:55%;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 	&__person{
-		margin-bottom: 25px;
+		margin-right: auto;
+		margin-bottom: 85px;
+		margin-left: auto;
+		width: 400px;
+		height: 400px;
+		@media (--desktop-viewport) {
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+	}
+	&__img{
 		width: 100%;
+		border: 1px solid var(--image-border-color);
+		object-fit: cover;
+		object-position: 50% 10%;
 	}
 	&__name{
 		font-size:2em;
@@ -165,18 +199,35 @@
 
 
 .profile{
-	margin-top:50px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 75px auto;
 	width:75%;
 	&__intro{
 		text-align:center;
 		font-size: 3em;
 		text-shadow: 0 0 13px darkgoldenrod;
 	}
-	&__img{
+	&__img-container{
 		margin-top:25px;
 		margin-right: auto;
 		margin-left: auto;
+		width: 400px;
+		height: 400px;
+	}
+	&__img{
+		width: 100%;
+		border: 1px solid var(--image-border-color);
+		object-fit: cover;
+		object-position: 50% 10%;
+	}
+}
+
+.footer{
+	padding-top: 20px;
+	height: 100px;
+    line-height: 10px;
+	&__source{
+		font-weight:bolder;
+		letter-spacing:1px;
+		transition: .3s all;
 	}
 }

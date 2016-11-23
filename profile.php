@@ -23,8 +23,8 @@
 	<section class="jumbotron">
 		<div class="profile">
 			<h1 class="profile__intro"> Hi! I'm <?php echo ucwords($person[0]["name"]); ?> </h1>
-			<div class="profile__img">
-				<?php echo "<img class='' src='/family/images/" . $person[0]["name"] . ".jpg'>"; ?>
+			<div class="profile__img-container">
+				<?php echo "<img class='profile__img' src='/family/images/" . $person[0]["name"] . ".jpg'>"; ?>
 			</div>
 		</div>
 	</section>
