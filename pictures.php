@@ -13,7 +13,7 @@
 ?>
 	
 	<section class="jumbotron">
-		<h1 class="page-header">Just Out Our <?php echo ucwords($pgTitle); ?> </h1>
+		<h1 class="page-header">Check Out Our <?php echo ucwords($pgTitle); ?> </h1>
 		
 		
 	</section>

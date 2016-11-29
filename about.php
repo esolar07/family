@@ -18,7 +18,7 @@
 		<div class="family-list">
 			<?php foreach($family as $person){ ?>
 				<div class="family-list__person">
-					<?php echo "<img class='family-list__img' src='/family/images/" . $person["name"] . ".jpg'>"; ?>
+					<?php echo "<img class='family-list__img js-about-lazy' src='/family/images/" . $person["name"] . ".jpg'>"; ?>
 					<div class="family-list__name"> <?php echo ucwords($person["name"]); ?> </div>
 				</div>
 			<?php } ?>

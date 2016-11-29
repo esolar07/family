@@ -6,9 +6,10 @@
 				<p>Check out the source on <a class='footer__source is-footer__source-hovered' href="https://github.com/esolar07/family">Github</a></p>
 			</div>
 		</footer>
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script> -->
+		<script src="js/jquery.lazyload.js"></script>
+        <!-- <script src="js/plugins.js"></script> -->
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

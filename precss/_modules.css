@@ -12,15 +12,27 @@
 		width: 100%;
 		font-size: 1.5em;
 		text-align: center;
-		background: linear-gradient(var(--header-txt-color-2), var(--header-txt-color));
-		-webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
 		@media (--desktop-viewport) {
 			margin-top: 20px;
 			width: 50%;
 		}
 	}
 }
+
+@supports (-webkit-background-clip: text) {
+	.navi__header{
+		background: linear-gradient(var(--header-txt-color-2), var(--header-txt-color));
+		-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+	}
+}
+
+@supports not (-webkit-background-clip: text){
+	.navi__header{
+		color: var(--header-txt-color);
+	}
+}
+
 
 .menu{
 	display: flex;
@@ -77,14 +89,32 @@
 		margin-left: auto;
 		text-align: center;
 		font-size: 5em;
-		background: linear-gradient(var(--header-txt-color), var(--header-txt-color-2));
-		-webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
 		@media (--desktop-viewport) {
 			top: 110px;
 			font-size: 10em;
 		}
 	}
+}
+
+
+@supports (-webkit-background-clip: text) {
+	.familyPic__title{
+		background: linear-gradient(var(--header-txt-color-2), var(--header-txt-color));
+		-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+	}
+}
+
+@supports not (-webkit-background-clip: text){
+	.familyPic__title{
+		color: var(--header-txt-color);
+		text-shadow: 10px 0px 1px  var(--header-txt-color-2);
+	}
+}
+
+.no-supports .familyPic__title { 
+	color: var(--header-txt-color);
+	text-shadow: 10px 0px 1px  var(--header-txt-color-2);
 }
 
 .familyMembers{
@@ -117,7 +147,7 @@
 	}
 	&__parent-name{
 		position: relative;
-		top: -130px;
+		top: -60px;
 		right: 0;
 		left: 0;
 		margin-right: auto;
@@ -125,7 +155,9 @@
 		text-align: center;
 		font-size: 2.5em;
 		transition: .3s all;
+		background: rgba(225,225,225, .5);
 		@media (--desktop-viewport) {
+			top: -94px;
 			font-size: 4.0em;
 		}
 	}
@@ -148,7 +180,7 @@
 	}
 	&__kid-name{
 		position: relative;
-		top: -80px;
+		top: -47px;
 		right: 0;
 		left: 0;
 		margin-right: auto;
@@ -156,7 +188,9 @@
 		text-align: center;
 		font-size: 2em;
 		transition: .3s all;
+		background: rgba(225,225,225, .5);
 		@media (--desktop-viewport) {
+			top: -60px;
 			font-size: 2.5em;
 		}
 	}

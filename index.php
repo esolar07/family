@@ -20,7 +20,7 @@
 	<section class="jumbotron">
 	
 		<div class="familyPic">
-			<img class="familyPic__lrgImg" alt="Solar Family Image" src="/family/images/family.jpg">
+			<img class="familyPic__lrgImg js-lrg-lazy" alt="Solar Family Image" data-original="/family/images/family.jpg">
 			<h1 class="familyPic__title"> <?php echo ucwords($siteTitle); ?> </h1>
 		</div>
 		
@@ -33,7 +33,7 @@
 			<?php foreach($parents as $parent){ ?>
 					<div class="familyMembers__parent">
 							<?php echo "<a href='/family/profile.php?id=" . $parent["id"] . "'>" ?>
-							<?php echo "<img class='familyMembers__parent-image' src='/family/images/" . $parent["name"] . ".jpg'>"; ?>
+							<?php echo "<img class='familyMembers__parent-image js-lazy' data-original='/family/images/" . $parent["name"] . ".jpg'>"; ?>
 							<div class='familyMembers__parent-name is-familyMembers__parent-name-hoverd'> <?php echo ucwords($parent["name"]); ?></div>
 						</a>
 					</div>
@@ -44,7 +44,7 @@
 			<?php foreach($kids as $kid) { ?>
 				<div class="familyMembers__kid">
 					<?php echo "<a href='/family/profile.php?id=" . $kid["id"] . "'>" ?>
-						<?php echo "<img class='familyMembers__kid-image' src='/family/images/" . $kid["name"] . ".jpg'>"; ?>
+						<?php echo "<img class='familyMembers__kid-image js-lazy' data-original='/family/images/" . $kid["name"] . ".jpg'>"; ?>
 						<div class='familyMembers__kid-name is-familyMembers__kid-name-hoverd'> <?php echo ucwords($kid["name"]); ?> </div>
 					</a>
 				</div>
