@@ -1,23 +1,21 @@
 <?php
 
-$siteTitle = "The Solars";
+$siteTitle = "Kate & Eddie's Baby Shower";
+$pageTitle = "RSVP"
 require_once('database.php');
 
 ?>
 
+<!DOCTYPE html>
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title> <?php echo $siteTitle."-".$pgTitle; ?> </title>
-        <meta name="description" content="">
+        <title> <?php echo $siteTitle."-".$pageTitle; ?> </title>
+        <meta name="description" content="Kate & Eddie's Baby Shower">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <!-- <link rel="stylesheet" href="stylesheet/normalize.css"> -->
-        <link rel="stylesheet" href="dest/styles.css">
+        <link rel="stylesheet" href="styles.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     </head>
     <body>

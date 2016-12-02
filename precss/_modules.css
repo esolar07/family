@@ -39,6 +39,7 @@
     flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	padding: 0;
     width: 100%;
 	@media (--desktop-viewport) {
 		flex-direction: row;
@@ -234,7 +235,10 @@
 
 .profile{
 	margin: 75px auto;
-	width:75%;
+	width:100%;
+	@media (--desktop-viewport) {
+		width:75%;
+	}
 	&__intro{
 		text-align:center;
 		font-size: 3em;
@@ -244,8 +248,11 @@
 		margin-top:25px;
 		margin-right: auto;
 		margin-left: auto;
-		width: 400px;
+		width: 100%;
 		height: 400px;
+		@media (--desktop-viewport) {
+			width: 400px;
+		}
 	}
 	&__img{
 		width: 100%;
